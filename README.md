@@ -27,22 +27,6 @@
 5. **Initialize the database into DuckDB:**
 `python src/setup_database.py`
 
-## How to add a new metric
-**Step 1: Create YAML Metric Definition**
-- Create a new .yaml file in the metrics/ directory with this structure
-
-**Step 2: Validate the Metric**
-- Run validation to check for errors: `python src/validate_yaml.py`
-
-**Step 3:  Execute the Metric**
-- Run the metric to create the table in DuckDB: `python src/run_metrics.py`
-
-**This will:**
-- Read all YAML files from /metrics
-- Execute each SQL query against DuckDB
-- Create or replace tables named after each metric
-
-
 ## Development guideline
 
 ### Project Structure
@@ -85,3 +69,18 @@
 - Database cleanup when needed: `python src/clean_database.py`
 
 - Backup important data before major changes
+
+## How to add a new metric
+**Step 1: Create YAML Metric Definition**
+- Create a new .yaml file in the metrics/ directory with this structure
+
+**Step 2: Validate the Metric**
+- Run validation to check for errors: `python src/validate_yaml.py`
+
+**Step 3:  Execute the Metric**
+- Run the metric to create the table in DuckDB: `python src/run_metrics.py`
+
+**This will:**
+- Read all YAML files from /metrics
+- Execute each SQL query against DuckDB
+- Create or replace tables named after each metric
