@@ -4,7 +4,7 @@
 
 **Goal**: to build a simple prototype for that system.
 
-**Objective**:A lightweight prototype system that allows Data Analysts to define customer metrics using YAML + SQL, with automatic materialization in DuckDB.
+**Objective**: A lightweight prototype system that allows Data Analysts to define customer metrics using YAML + SQL, with automatic materialization in DuckDB.
 
 ## Setup instructions
 ### Prerequisites
