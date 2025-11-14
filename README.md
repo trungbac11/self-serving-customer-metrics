@@ -55,21 +55,21 @@ Place "customers.csv", "orders.csv", and "order_items.csv" in the data/ director
 ### Project Structure
 <img width="799" height="351" alt="image" src="https://github.com/user-attachments/assets/0a37675a-0f76-4570-8de8-9237fec6dc42" />
 
-### Testing Procedures
+### Script Execution Guide
 
-#### Database Setup Test:
+#### Database Initialization:
 `python src/setup_database.py`
 
-#### Validation Test:
+#### Metric Definition Validation:
 `python src/validate_yaml.py`
 
-#### Execution Test:
+#### Metric Calculation and Storage:
 `python src/run_metrics.py`
 
-#### Cleanup Test:
+#### Database Cleanup:
 `python src/clean_database.py`
 
-### Test Cases
+### System Testing
 #### Validation Test Cases
 - Test with missing required fields
 
