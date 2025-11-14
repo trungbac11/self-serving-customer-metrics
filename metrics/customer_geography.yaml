@@ -1,0 +1,17 @@
+metric_name: customer_geography
+description: Customer distribution by state and city with order counts
+owner: data.analyst@shopback.com
+schedule: "0 8 * * *"
+sql: |
+  SELECT
+    c.customer_state,
+    c.customer_city,
+    COUNT(DISTINCT c.customer_id) as customer_count,
+    COUNT(DISTINCT o.order_id) as total_orders,
+    SUM(oi.price + oi.freight_value) as total_revenue
+  FROM customers c
+  JOIN orders o ON c.customer_id = o.customer_id
+  JOIN order_items oi ON o.order_id = oi.order_id
+  WHERE o.order_status = 'delivered'
+  GROUP BY c.customer_state, c.customer_city
+  ORDER BY total_revenue DESC

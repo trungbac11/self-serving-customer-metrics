@@ -1,0 +1,14 @@
+metric_name: lifetime_revenue
+description: Total revenue per customer including price and freight value
+owner: data.analyst@shopback.com
+schedule: "0 8 * * *"
+
+sql: |
+  SELECT
+    c.customer_id,
+    SUM(oi.price + oi.freight_value) AS lifetime_revenue
+  FROM customers c
+  JOIN orders o ON c.customer_id = o.customer_id
+  JOIN order_items oi ON o.order_id = oi.order_id
+  WHERE o.order_status = 'delivered'
+  GROUP BY c.customer_id

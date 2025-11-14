@@ -1,0 +1,4 @@
+duckdb
+PyYAML
+numpy
+pandas

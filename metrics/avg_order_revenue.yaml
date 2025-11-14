@@ -1,0 +1,14 @@
+metric_name: avg_order_revenue
+description: Average revenue per order for each customer
+owner: data.analyst@shopback.com
+schedule: "0 8 * * *"
+
+sql: |
+  SELECT
+    c.customer_id,
+    AVG(oi.price + oi.freight_value) AS avg_order_revenue
+  FROM customers c
+  JOIN orders o ON c.customer_id = o.customer_id
+  JOIN order_items oi ON o.order_id = oi.order_id
+  WHERE o.order_status = 'delivered'
+  GROUP BY c.customer_id
