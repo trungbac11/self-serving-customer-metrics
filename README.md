@@ -53,21 +53,7 @@ Place "customers.csv", "orders.csv", and "order_items.csv" in the data/ director
 ## Development guideline
 
 ### Project Structure
-project/
-├── data/                   # Source CSV files
-├── metrics/               # Metric definitions (YAML)
-│   ├── lifetime_revenue.yaml
-│   ├── avg_order_revenue.yaml
-│   └── customer_geography.yaml
-├── src/                   # Python scripts
-│   ├── validate_yaml.py   # YAML validation
-│   ├── run_metrics.py     # Metric execution
-│   ├── setup_database.py  # DB initialization
-│   └── clean_database.py # DB cleanup
-├── requirements.txt       # Dependencies
-├── README.md              # Documentation
-└── AI_USAGE.md            # AI collaboration documentation
-
+<img width="799" height="351" alt="image" src="https://github.com/user-attachments/assets/0a37675a-0f76-4570-8de8-9237fec6dc42" />
 
 ### Testing Procedures
 
