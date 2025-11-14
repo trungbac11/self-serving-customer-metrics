@@ -13,7 +13,7 @@
 - Using Linux
 
 ### Installation Steps
-1. **Download the project files**
+1. **Clone the project**  `git clone https://github.com/trungbac11/self-serving-customer-metrics.git`
 
 2. **Create virtual enviroments**
 `python -m venv venv`
@@ -25,14 +25,8 @@
 `pip install --upgrade pip`
 `pip install -r requirements.txt`
 
-5. **Prepare data files:**
-Place "customers.csv", "orders.csv", and "order_items.csv" in the data/ directory
-
-6. **Initialize the database:**
+5. **Initialize the database into DuckDB:**
 `python src/setup_database.py`
-
-7. **Verify setup:**
-`python src/validate_yaml.py`
 
 ## How to add a new metric
 **Step 1: Create YAML Metric Definition**
