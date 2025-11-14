@@ -9,7 +9,6 @@
 ## Setup instructions
 ### Prerequisites
 - Python 3.12+
-- Pip package manager
 - Using Linux
 
 ### Installation Steps
