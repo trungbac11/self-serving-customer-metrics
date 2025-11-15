@@ -43,8 +43,7 @@ project/
 │   ├── setup_database.py  # DB initialization
 │   └── clean_database.py # DB cleanup
 ├── requirements.txt       # Dependencies
-├── README.md              # Documentation
-└── AI_USAGE.md            # AI collaboration documentation
+└── README.md              # Documentation
 ```
 
 ### Script Execution Guide
