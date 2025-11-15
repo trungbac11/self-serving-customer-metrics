@@ -31,7 +31,8 @@
 
 ### Project Structure
 <img width="799" height="351" alt="image" src="https://github.com/user-attachments/assets/0a37675a-0f76-4570-8de8-9237fec6dc42" />
-```text
+
+``` text
 project/
 ├── data/                   # Source CSV files
 ├── metrics/               # Metric definitions (YAML)
